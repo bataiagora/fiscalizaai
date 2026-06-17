@@ -1,25 +1,7 @@
-from telegram import Bot
-import asyncio
+from http.server import BaseHTTPRequestHandler
 
-TOKEN = "8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc"
-CHAT_ID = -1004470036770
-
-async def enviar():
-bot = Bot(token=TOKEN)
-
-```
-await bot.send_message(
-    chat_id=CHAT_ID,
-    text="🚀 FiscalizaAi conectado ao Vercel com sucesso!"
-)
-```
-
-def handler(request):
-asyncio.run(enviar())
-
-```
-return {
-    "statusCode": 200,
-    "body": "OK"
-}
-```
+class handler(BaseHTTPRequestHandler):
+def do_GET(self):
+self.send_response(200)
+self.end_headers()
+self.wfile.write(b"FiscalizaAi OK")
