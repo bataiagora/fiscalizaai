@@ -1,13 +1,12 @@
-
 from telegram import Bot
 import asyncio
 
-TOKEN = "SEU_TOKEN_DO_BOT"
+TOKEN = ""
 CHAT_ID = -1004470036770
 
 async def enviar():
 bot = Bot(token=TOKEN)
-
+"8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc"
 ```
 await bot.send_message(
     chat_id=CHAT_ID,
@@ -17,7 +16,10 @@ await bot.send_message(
 
 def handler(request):
 asyncio.run(enviar())
+
+```
 return {
-"statusCode": 200,
-"body": "OK"
+    "statusCode": 200,
+    "body": "OK"
 }
+```
