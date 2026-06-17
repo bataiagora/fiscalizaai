@@ -1,12 +1,13 @@
 from telegram import Bot
 import asyncio
+import os
 
-TOKEN = ""
-CHAT_ID = -1004470036770
+TOKEN = os.environ.get("8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc")
+CHAT_ID = int(os.environ.get("-1004470036770"))
 
 async def enviar():
 bot = Bot(token=TOKEN)
-"8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc"
+
 ```
 await bot.send_message(
     chat_id=CHAT_ID,
