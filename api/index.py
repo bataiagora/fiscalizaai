@@ -1,9 +1,8 @@
 from telegram import Bot
 import asyncio
-import os
 
-TOKEN = os.getenv("8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc")
-CHAT_ID = int(os.getenv("-1004470036770"))
+TOKEN = "8916087527:AAEqO9VmTKEApwEM9TAW18YGmySQbbn_SPc"
+CHAT_ID = -1004470036770
 
 async def enviar():
 bot = Bot(token=TOKEN)
